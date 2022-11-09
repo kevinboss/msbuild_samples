@@ -1,10 +1,7 @@
-<Project Sdk="Microsoft.Build.NoTargets">
+<Project>
+  <Import Project="Sdk\Sdk.props" />
   <PropertyGroup>
-    <TargetFrameworks>net40;netstandard2.0</TargetFrameworks>
-    <Description>Provides MSBuild logic.</Description>
-    <PackageTags>MSBuild MSBuildSdk dirs</PackageTags>
-    <ArtifactsPath>$(BaseArtifactsPath)$(MSBuildProjectName)\</ArtifactsPath>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageType>MSBuildSdk</PackageType>
+    <IsBuildSdkProject>true</IsBuildSdkProject>
   </PropertyGroup>
+  <Import Project="Sdk\Sdk.targets" />
 </Project>

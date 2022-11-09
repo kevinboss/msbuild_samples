@@ -1,2 +1,5 @@
-<Project Sdk="..\04b_Sdk\My.Sdk.csproj">
+<Project Sdk="My.Sdk/1.0.0">
+    <ItemGroup>
+        <Import Include="HelloWorld.cs" />
+    </ItemGroup>
 </Project>

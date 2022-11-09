@@ -4,4 +4,5 @@
   Licensed under the MIT license.
 -->
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
 </Project>
