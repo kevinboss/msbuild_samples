@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.Build.NoTargets">
   <PropertyGroup>
     <TargetFrameworks>net40;netstandard2.0</TargetFrameworks>
-    <Description>Provides MSBuild traversal logic.</Description>
-    <PackageTags>MSBuild MSBuildSdk traversal dirs</PackageTags>
+    <Description>Provides MSBuild logic.</Description>
+    <PackageTags>MSBuild MSBuildSdk dirs</PackageTags>
     <ArtifactsPath>$(BaseArtifactsPath)$(MSBuildProjectName)\</ArtifactsPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageType>MSBuildSdk</PackageType>
