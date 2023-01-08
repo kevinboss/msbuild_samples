@@ -1,5 +1,5 @@
 <Project Sdk="My.Sdk/1.0.0">
     <ItemGroup>
-        <Import Include="HelloWorld.cs" />
+        <Compile Include="helloworld.cs" />
     </ItemGroup>
 </Project>

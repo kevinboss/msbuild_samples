@@ -1,7 +1,13 @@
 <Project>
-  <Import Project="Sdk\Sdk.props" />
-  <PropertyGroup>
-    <IsBuildSdkProject>true</IsBuildSdkProject>
-  </PropertyGroup>
-  <Import Project="Sdk\Sdk.targets" />
+	<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+	<PropertyGroup>
+		<IsBuildSdkProject>true</IsBuildSdkProject>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<EnableDocumentation>false</EnableDocumentation>
+    	<TargetFramework>net48</TargetFramework>
+		<NoWarn>$(NoWarn);NU5100;NU5128</NoWarn>
+		<BuildOutputTargetFolder>Sdk\</BuildOutputTargetFolder>
+		<PackageType>MSBuildSdk</PackageType>
+	</PropertyGroup>
+  	<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
 </Project>
