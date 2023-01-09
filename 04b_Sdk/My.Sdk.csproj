@@ -9,5 +9,13 @@
 		<BuildOutputTargetFolder>Sdk\</BuildOutputTargetFolder>
 		<PackageType>MSBuildSdk</PackageType>
 	</PropertyGroup>
+	<ItemGroup>
+	  <None Update="Sdk\Sdk.props">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Sdk\Sdk.targets">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
   	<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
 </Project>
